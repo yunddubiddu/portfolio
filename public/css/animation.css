@@ -1,0 +1,115 @@
+/* 위로 올라가는 애니메이션 */
+@keyframes up {
+    0%{
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* 중간부터 퍼지는 선 애니메이션 */
+@keyframes line {
+    from {
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+/* 오른쪽에서 왼쪽으로 */
+@keyframes wipe-hor {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+/* 약간 돌아가는 애니메이션 */
+@keyframes rotateAni {
+    from {
+        transform: rotate(-30deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+/* sec1 */
+@keyframes progress-1 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 93;
+    }
+  }
+  @keyframes progress-2 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 85;
+    }
+  }
+  @keyframes progress-3 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 85;
+    }
+  }
+  @keyframes progress-4 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 87;
+    }
+  }
+  @keyframes progress-5 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 88;
+    }
+  }
+  @keyframes progress-6 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 80;
+    }
+  }
+/* sec2 */
+@keyframes spin {
+    from {transform: perspective(2000px) rotateY(100deg); opacity: 0;}
+    to {transform: 0; opacity: 1;}
+  }
+/* sec3 */
+@keyframes fadeInLeft {
+    0% {
+        display: none;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        display: visible;
+        transform: translateZ(0);
+    }
+  }
+    @keyframes fadeInRight {
+    0% {
+        display: none;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        display: visible;
+        transform: translateZ(0);
+    }
+  }
